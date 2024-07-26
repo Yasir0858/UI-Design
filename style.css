@@ -1,0 +1,187 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+}
+.maincontainer{
+    background-image: url(pexels-tbee-14592-82256.jpg);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: row;
+    padding: 10%;
+    
+
+    
+}
+.leftchild{
+    background-image: url(pexels-elvis-1316342-2528118.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    width: 40%;
+    height: 100vh;
+    
+}
+
+#upper{
+    margin-top: 8%;
+    margin-left: 5%;
+    color:rgb(8, 145, 242); ;
+}
+.leftchild img{
+    width: 32%;
+    height: 10%;
+}
+
+.rightchild{
+    background: rgb(63,251,232);
+background: radial-gradient(circle, rgba(63,251,232,1) 0%, rgba(213,70,252,1) 100%);
+
+    width: 60%;
+    height: 100vh;
+    display:  flex;
+    align-items: center;
+    flex-direction: column;
+}
+.rightchild #up{
+    margin-top: 5%;
+    font-size: 20px;
+    color: gray;
+}
+a{
+    text-decoration: none;
+    color: rgb(12, 88, 118);
+}
+.rightchild h1{
+    margin-top: 8%;
+    font-size: 100px;
+    color: rgb(22, 121, 170);
+}
+.rightchild #logos{
+    font-size: 40px;
+}
+.rightchild p{
+    font-size: 30px;
+    color: rgb(39, 75, 149);
+}
+input{
+    width: 60%;
+    height: 8%;
+    border-radius: 34px;
+    font-size: 20px;
+    padding-left: 5%;
+    margin-bottom: 2%;
+    background-color: transparent;
+    border: 3px solid rgb(19, 20, 20);
+}
+button{
+    width: 60%;
+    height: 8%;
+    border-radius: 34px;
+    font-size: 20px;
+    margin-top: 3%;
+    background-color: rgb(23, 181, 254);
+    border: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#up{
+    
+    margin-left: 40%;
+}
+#or{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   
+}
+hr{
+    height: 3px;
+    width: 300px;
+    border: 2px solid gray;
+    background-color: rgb(42, 42, 57);
+}
+
+
+/* Responsive Code */
+
+/* for laptop */
+@media (max-width:1200px) {
+    #logo{
+        width: 40%;
+    }
+    .leftchild h1{
+        font-size: 15px;
+    }
+    .rightchild #up{
+        font-size: 20px;
+    }
+    .rightchild h1{
+        font-size: 50px;
+    }
+    .rightchild #logos{
+        font-size: 20px;
+    }
+    input{
+        font-size: 15px;
+    }
+    button{
+        font-size: 15px;
+    }
+    .rightchild p{
+        font-size: 15px;
+    }
+    hr{
+        width: 180px;
+        border: 1px solid gray;
+    } 
+}
+
+/* for tablets */
+@media (max-width:768px) {
+
+    #logo{
+        width: 50%;
+    }    
+    .leftchild h1{
+        font-size: 12px;
+    }
+    .rightchild #up{
+        font-size: 15px;
+    }
+    hr{
+        width: 120px;
+    }
+    input{
+        font-size: 13px;
+    }
+    button{
+        font-size: 13px;
+    } 
+}
+
+/* for Mobiles */
+@media (max-width:480px) {
+    .maincontainer{
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse;
+    }
+    .leftchild{
+        width: 100%;
+    }
+    .left-child #logo{
+
+    }
+    .rightchild{
+        width: 100%;
+        height: 100vh;
+    }
+}
